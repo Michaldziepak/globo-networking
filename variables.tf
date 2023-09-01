@@ -24,6 +24,10 @@ variable "cidr_block" {
   description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
   default     = "10.42.0.0/16"
 }
+variable "billing_code" {
+  type        = string
+  description = "(Required) Billing code for network"
+}
 
 variable "public_subnets" {
   type        = map(string)
